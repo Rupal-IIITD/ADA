@@ -33,3 +33,30 @@ struct TreeNode* newTreeNode(int data)
   temp->data = data;
   temp->left = NULL;
   temp->right = NULL;
+return temp;
+}
+ 
+/* Driver function to test above functions */
+int main()
+{
+  struct TreeNode *root = NULL;
+  int x;
+ 
+  /* Constructing tree given in the above figure */
+  root = NULL;
+  // root->left = newTreeNode(-2);
+  // root->right = newTreeNode(6);
+  // root->left->left = newTreeNode(3);
+  // root->left->right = newTreeNode(2);
+  // root->right->left = NULL;
+  // root->right->right = newTreeNode(1);
+ 
+  answer(root);
+ 
+  // Print inorder traversal of the converted tree to test result of answer()
+  //printf("Inorder Traversal of the resultant tree is: \n");
+  printInorder(root);
+  printf("%d\n", count);
+ 
+  return 0;
+}
