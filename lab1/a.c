@@ -33,6 +33,3 @@ struct TreeNode* newTreeNode(int data)
   temp->data = data;
   temp->left = NULL;
   temp->right = NULL;
- 
-  return temp;
-}
